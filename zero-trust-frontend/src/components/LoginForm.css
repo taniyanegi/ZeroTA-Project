@@ -1,0 +1,117 @@
+/* 🌌 Background */
+.login-background {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+  padding-top: 270px; /* Push it down relative to the center to avoid text */
+  box-sizing: border-box;
+
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* 🔐 Login Card */
+.login-card {
+  width: 440px; /* Slightly narrower to fit better */
+  padding: 35px 30px 25px !important; /* Less padding to make it shorter */
+  border-radius: 18px;
+
+  /* Glassmorphism to see the background text perfectly */
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 40, 80, 0.35),
+    rgba(5, 20, 45, 0.45)
+  );
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+
+  border: 1px solid rgba(0, 180, 255, 0.45);
+
+  box-shadow:
+    0 0 0 1px rgba(0, 180, 255, 0.25),
+    0 0 45px rgba(0, 180, 255, 0.25);
+
+  color: #cce7ff;
+}
+
+.input-box .icon {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #8fd3ff;
+}
+
+.input-box input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #ffffff;
+  font-size: 15px;
+}
+
+.input-box input::placeholder {
+  color: #9fd6ff;
+}
+
+/* 🔹 Remember Me */
+.options {
+  font-size: 14px;
+  margin: 6px 0 10px;
+  color: #9fd6ff;
+}
+
+/* 🔹 Login Button */
+.login-btn {
+  width: 100%;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: 700;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+
+  margin-top: 6px;
+
+  color: #ffffff;
+  background: linear-gradient(to right, #1d9bf0, #00c6ff);
+
+  box-shadow:
+    0 0 10px rgba(0, 180, 255, 0.6),
+    inset 0 0 5px rgba(255, 255, 255, 0.3);
+
+  transition: 0.2s ease;
+}
+
+.login-btn:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+}
+
+/* 🔹 Signup Text */
+.signup-text {
+  margin-top: 12px;
+  margin-bottom: 0px;
+  font-size: 14px;
+  color: #9fd6ff;
+  text-align: center;
+}
+
+/* 🔹 Signup Link */
+.signup-link {
+  color: #1d9bf0;
+  font-weight: 700;
+
+  cursor: pointer;
+  display: inline-block;
+
+  transition: all 0.3s ease;
+}
+
+.signup-link:hover {
+  color: #00c6ff;
+  text-decoration: underline;
+}
